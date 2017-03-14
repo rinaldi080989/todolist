@@ -20,3 +20,4 @@ Route::get('todo', function () {
 });
 
 Route::get('todo', 'TodoController@index');
+Route::post('todo', 'TodoController@index');

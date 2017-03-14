@@ -14,7 +14,8 @@
 					<li>{{ $td->item }}</li>
 					@endforeach
 				</ul>
-				<form>
+				<form action="todo" method="POST">
+				{{ csrf_field() }}
 				<div class="row">
 					<div class="col-lg-3">
 						<div class="form-group">
