@@ -2,7 +2,9 @@
 <html>
 <head>
 	<title>Todo List</title>
-	<link rel="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	
+
 </head>
 <body>
 	<div class="container">
@@ -15,26 +17,25 @@
 					@endforeach
 				</ul>
 				<form action="todo" method="POST">
-				{{ csrf_field() }}
-				<div class="row">
-					<div class="col-lg-3">
-						<div class="form-group">
-							<input type="text" class="form-control" nama="todo_item" placeholder="Item baru...">
+					{{ csrf_field() }}
+					<div class="row">
+						<div class="col-lg-3">
+							<div class="form-group">
+								<input type="text" class="form-control" name="todo_item" placeholder="Item baru...">
+							</div>
 						</div>
-					</div>
-
-				
-					<div class="col-lg-1">
-						<button type="submit" class="btn-success">Add</button>
-					</div>
-					<div class="col-lg-8">
-						
+						<div class="col-lg-1">
+							<div class="ad">
+								<button type="submit" class="btn btn-success">Add</button>
+							</div>
+						</div>	
+							<div class="col-lg-8">	
+							</div>
 					</div>
 
 				</form>
-				<script type="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 			</div>
-		</div>
 		</div>
 	</div>	
 </body>
